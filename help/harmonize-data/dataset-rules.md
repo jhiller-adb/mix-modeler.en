@@ -52,7 +52,9 @@ In the **[!UICONTROL Create]** screen,
 
    Mix Modeler supports data restatement. To ensure that the data that is used for reporting, modeling, and planning is accurate. And that the data is able to support the brand and marketing analyst's expectations and needs.
    
-   You can send restated rows of summary data as incremental rows in an Experience Platform dataset and the harmonization service updates the harmonized dataset with that restated data. Similarly, you can also remove rows of summary data that needs to be reflected in the harmonization service. 
+   You can send restated rows of summary data as incremental rows in an Experience Platform dataset and the harmonization service updates the harmonized dataset with that restated data. Similarly, you can also remove rows of summary data that needs to be reflected in the harmonization service.
+
+   NOTE: When restating data, the new dataset must include ALL rows for any date that is updated, even if unchanged. When a particular date is updated, if any previous rows are missing they will be removed from the dataset.
 
 1. In the **[!UICONTROL Map to harmonized fields]** section:
 
